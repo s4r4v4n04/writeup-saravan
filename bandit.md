@@ -1,5 +1,6 @@
 # Level 0
 ssh bandit0@bandit.labs.overthewire.org -p 2220
+ssh is a secured shell is a network is used to comminucate 
 
 # Level 0 -> 1
 the aim of this level is to find the password in the file called readme<br>
