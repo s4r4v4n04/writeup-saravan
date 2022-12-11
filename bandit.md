@@ -2,7 +2,7 @@
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 # Level 0 -> 1
-the aim of this level is to find the password in the file called readme
+the aim of this level is to find the password in the file called readme<br>
 ls<br>
 cat readme<br>
 ssh bandit1@bandit.labs.overthewire.org -p 2220<br>
@@ -11,7 +11,7 @@ cat is used to see the contents in the file<br>
 password:NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL<br>
 
 # Level 1 -> 2
-the aim of this level is to find the password in the home directory
+the aim of this level is to find the password in the home directory<br>
 ssh bandit2@bandit.labs.overthewire.org -p 2220<br>
 ls<br>
 cat ./-<br>
@@ -20,7 +20,7 @@ cat is used to see the contents in the  file<br>
 password:rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi<br>
 
 # Level 2 -> 3
-the aim of this level is to find the password from  spaces in this filename located in the home directory
+the aim of this level is to find the password from  spaces in this filename located in the home directory<br>
 ls<br>
 cat "spaces in this filename<br>
 ls is used to list the files<br>
@@ -28,7 +28,7 @@ cat is used to see the contents in the  file<br>
 password:aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG<br>
 
 # Level 3 -> 4
-the aim of this level is to find the password which is stored in a hidden file in the inhere directory.
+the aim of this level is to find the password which is stored in a hidden file in the inhere directory.<br>
 ls<br>
 cd inhere<br>
 ls -a<br>
@@ -40,7 +40,7 @@ ls -a to list all the files with hiddenfiles<br>
 password:2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe<br>
 
 # Level 4 -> 5
-the aim of this level is to find the password which is in  inhere directory which is human readible
+the aim of this level is to find the password which is in  inhere directory which is human readible<br>
 ls<br>
 cd inhere<br>
 file *<br>
@@ -52,7 +52,7 @@ file is used to know what type of file is it <br>
 password:lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR<br>
 
 # Level 5 -> 6
-the aim of this level is to find the password  from inhere directory using the given prop
+the aim of this level is to find the password  from inhere directory using the given prop<br>
 ls<br>
 cd inhere<br>
 ls<br>
@@ -64,7 +64,7 @@ ls -al is to listing the files in detail<br>
 password:P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU<br>
 
 # Level 6 -> 7
-the aim of this level is to find the password which is there some where in the given files
+the aim of this level is to find the password which is there some where in the given files<br>
 cd ../..<br>
 find ./ -group bandit6 -user bandit7 -size 33c<br>
 found  ./var/lib/dpkg/info/bandit7.password<br>
@@ -75,13 +75,13 @@ cat is used to see the content in the file<br>
 password:z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S<br>
 
 # Level 7 -> 8
-the aim of this level is to find the password in the file data.txt next to the word millionth
+the aim of this level is to find the password in the file data.txt next to the word millionth<br>
 cat data.txt | grep millionth<br>
 cat is used to see the content in the file<br>
 password:TESKZC0XvTetK0S9xNwm25STk5iWrBvP<br>
 
 # Level 8 -> 9
-the aim of this level is to find the password data.txt which is only one line of text
+the aim of this level is to find the password data.txt which is only one line of text<br>
 ls<br>
 sort data.txt | uniq -u<br>
 ls is used <br>
@@ -89,7 +89,7 @@ ls is used to list the files<br>
 password:EN632PlfYiZbn3PhVK3XOGSlNInNE00t<br>
 
 # Level 9 -> 10
-the aim of this level is to find the password which is in  data.txt
+the aim of this level is to find the password which is in  data.txt<br>
 ls<br>
 cat data.txt | grep "="<br>
 strings data.txt<br>
@@ -99,7 +99,7 @@ strings is used to  to return the string characters into files.<br>
 password:G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s<br>
 
 # Level 10 -> 11
-the aim of this level is to find the password which is in data.txt and use base64
+the aim of this level is to find the password which is in data.txt and use base64<br>
 ls<br>
 cat data.txt<br>
 base64 -d data.txt<br>
@@ -108,7 +108,7 @@ cat is used to see the content in the file<br>
 base64 is used to convert the biniary to text<br>
 password:6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM<br>
 # Level 11 -> 12
-the aim of this level is to find the password in data.txt
+the aim of this level is to find the password in data.txt<br>
 ls<br>
 cat data.txt<br>
 used CyberChef cipher to decode ROT13<br>
